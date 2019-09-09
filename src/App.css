@@ -1,33 +1,105 @@
-.App {
-  text-align: center;
+/* Page Styling */
+
+* {
+	margin: 0;
+	padding: 0;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+	background-color: #282828;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;  
+}
+
+.App {
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;   
+	width: 50vw;
+}
+
+/* Header and Text Style */
+
+.header-wrapper h1 {
+	font-family: "Montserrat", sans-serif;
+	font-size: 65px;
+	color: white;
+}
+
+.header-wrapper hr {
+	color: #d02035;
+	background-color: #d02035;
+	border: none;
+	margin: 30px 0;
+	min-width: 200px;
+	width: 33%;
+	height: 10px;
+}
+
+/* Form Style */
+
+.form-wrapper{
+  font-family: "Merriweather", serif;
+  color: white;  
+}
+
+.form-wrapper p {
+	font-size: 20px;
+}
+
+.form {
+  margin-top: 30px;
+}
+
+.inputs {
+	display: flex;
+	justify-content: space-between;
+}
+
+.inputs input, select {
+  font-style: italic;
+  color: #797979;
+  border: 0px;
+  border-radius: 5px;
+  width: 50%;
+  height: 5vh;
+  font-size: 16px;
+  padding-left: 5px;
+}
+
+.inputs input {
+  margin-right: 5px;
+}
+.inputs select {
+  margin-left: 5px;
+}
+
+.form button {
+	margin: auto;
+	display: block;
+	margin-top: 20px;
+	padding: 10px 0;
+	width: 100%;
+	font-size: 20px;
+	font-style: bold;
+	color: #fff;
+	background-color: #d02035;
+	border: none;
+	border-radius: 5px;
+}
+
+/* Thankyou */
+
+.thank-you {
+  font-family: "Montserrat", sans-serif;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.thank-you h2 {
+  padding-bottom: 20px;
+  
 }
